@@ -1,0 +1,8 @@
+ .primary
+{
+    background-color:skyblue;
+    padding: 30px;
+    margin: 100px;
+    outline: black solid 10px;
+  border: 1px solid #4CAF50;
+}

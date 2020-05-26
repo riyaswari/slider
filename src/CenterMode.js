@@ -1,24 +1,24 @@
-import './App.css';
 import React, { Component } from "react";
 import Slider from "react-slick";
+import './myStyles.css'
 
- class SimpleSlider extends Component {
+
+ class CenterMode extends Component {
   render() {
     const settings = {
-      dots: true,
+      className: "center",
+      centerMode: true,
       infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1
+      centerPadding: "60px",
+      slidesToShow: 3,
+      speed: 500
     };
     return (
       <div>
-        <h2><center>Single Item</center></h2>
+        <h2><center>CenterMode</center></h2>
         <Slider {...settings}>
-          
-          <div >
-            
-           <h3 className='primary'><center>1</center></h3>
+          <div>
+            <h3 className='primary'><center>1</center></h3>
           </div>
           <div>
             <h3 className='primary'><center>2</center></h3>
@@ -41,4 +41,4 @@ import Slider from "react-slick";
   }
 }
 
-export default SimpleSlider;
+export default CenterMode

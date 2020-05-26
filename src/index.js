@@ -3,10 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import Slider from 'react-slick';
+import MultipleItems from './MultiItems';
+import CenterMode from './CenterMode';
+import MultipleRows from './MultipleRows';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+  <MultipleItems/>
+  <CenterMode/>
+  <MultipleRows/>
   </React.StrictMode>,
   document.getElementById('root')
 );
